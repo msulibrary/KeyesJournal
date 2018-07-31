@@ -1,0 +1,37 @@
+	
+           
+			 html{
+			 background : #f1e9d2;
+			 }
+			
+			section {
+						width: 95%;
+						/*height: 325px;*/
+						overflow: auto;
+						margin: auto;
+						background: #f9f6eb;
+						padding: 10px;
+					}
+			div#one {
+						width: 50%;
+						height: 300px;
+						display:block;
+						float: left;
+					}
+			div#two {
+						margin-left: 55%;
+						height: 300px;
+						
+						
+					}
+					div#three {
+						margin-left: 50%;
+						height: 300px;
+						
+						
+					}
+		
+			
+					.vis-item.vis-background.negative {
+      background-color: rgba(255, 0, 0, 0.2);
+    }
