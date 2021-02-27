@@ -11,4 +11,4 @@ Prototype exhibit for historical journal or diary. It is live at [KeyesJournal](
 
 ## People
 
-Crafted with :heart: by Dillon Monday and [Jason A. Clark](http://www.jasonclark.info) sameAs [@jaclark](https://twitter.com/jaclark)
+Crafted with :heart: by [Dillon Monday](https://github.com/DillonGMon) and [Jason A. Clark](http://www.jasonclark.info) sameAs [@jaclark](https://twitter.com/jaclark)
