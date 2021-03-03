@@ -13,43 +13,41 @@
 <h1 style= "font-family: helvetica; text-align: center;">Tales from Yellowstone Park</h1>
 <div>
 <section>
-    <div id="one"><p style= "font-family: helvetica;">Since its establishment in 1872, Yellowstone park has had over 150 million visitors. Each one of these visitors had their own 
+<div id="one"><p style= "font-family: helvetica;">Since its establishment in 1872, Yellowstone park has had over 150 million visitors. Each one of these visitors had their own 
 		unique experience, some leaving with treasured memories and maybe some pictures. While it may just be a quick car ride away nowadays, travelling the
 		park before automobiles became a common part of American life was a very different experience. The Special Collections at MSU has a handful of
 		journals and photos from these early tourists, documenting their travels. Some of the more thorough accounts have been selected to be featured in
 		this map, documenting their travels in the park. Some of the accounts featured here include the journal of Henry F. Keyes, a young Harvard student
 		who traveled through in 1899, hiking much of the park, until an injury cut his visit short, or Charles Hoff, who rode through in a wagon with his 
 		brother and family in September of 1908. All of these accounts remark on the natural beauty of the park and its unique thermal features.
-		</p></div>
-    <div id="two"><ul>
-				<li style= "font-family: helvetica;"><a href='http://www.lib.montana.edu/archives/ynp.html'> Yellowstone collections</a>- A list of papers, journals and diaries that Special Collections has involving Yellowstone Park including the accounts used for this map. </li>  <p></p>
-				<li style= "font-family: helvetica;"><a href='keyesIndex.php'> Keyes Journal </a>-A young Harvard student documents his travels from the east coast to Yellowstone. While there he records the sights from the western entrance through the geyser basin. His journey was cut short due to an injury near Old Faithful, but he still saw a good portion of the park on his trip out, travelling first to Yellowstone lake, then up to the Canyon Hotel, eventually leaving through the north entrance near Mammoth Springs.</li><p></p>
-				<li style= "font-family: helvetica;"><a href='https://arc.lib.montana.edu/finding-aids/item/551'> Hoff journal</a> -Charles Hoff set off on a wagon trip in 1908 with friends and family to see Yellowstone Park. They left from near Boulder Wyoming, making it to the park on September 4, 1908. They came in through the southern entrance and made their way north, circling around  to see Tower Falls, Mammoth Springs, and the Geyser Basins, eventually leaving through the western entrance before going home.</li><p></p>
-				<li style= "font-family: helvetica;"><a href= 'vert/vert.html'> Yellowstone Timeline</a> -For a bit of perspective on the scale of the history of the park, here is a timeline beginning with some early native Americans, extending to modern day.</li>
-	</ul></div>
-</section></div>
+</p></div>
+<div id="two">
+<ul>
+<li style= "font-family: helvetica;"><a href='http://www.lib.montana.edu/archives/ynp.html'> Yellowstone collections</a>- A list of papers, journals and diaries that Special Collections has involving Yellowstone Park including the accounts used for this map. </li>  <p></p>
+<li style= "font-family: helvetica;"><a href='keyesIndex.php'> Keyes Journal </a>-A young Harvard student documents his travels from the east coast to Yellowstone. While there he records the sights from the western entrance through the geyser basin. His journey was cut short due to an injury near Old Faithful, but he still saw a good portion of the park on his trip out, travelling first to Yellowstone lake, then up to the Canyon Hotel, eventually leaving through the north entrance near Mammoth Springs.</li><p></p>
+<li style= "font-family: helvetica;"><a href='https://arc.lib.montana.edu/finding-aids/item/551'> Hoff journal</a> -Charles Hoff set off on a wagon trip in 1908 with friends and family to see Yellowstone Park. They left from near Boulder Wyoming, making it to the park on September 4, 1908. They came in through the southern entrance and made their way north, circling around  to see Tower Falls, Mammoth Springs, and the Geyser Basins, eventually leaving through the western entrance before going home.</li><p></p>
+<li style= "font-family: helvetica;"><a href= 'vert/vert.html'> Yellowstone Timeline</a> -For a bit of perspective on the scale of the history of the park, here is a timeline beginning with some early native Americans, extending to modern day.</li>
+</ul>
+</div>
+</section>
+</div>
 
 <p></p>
 <p></p>
 	
-   <div id="map" style="width: 100%; height: 800px; align: right";></div>
-
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
-    <!-- Include this library for mobile touch support  -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
-
-
-    <script src="SliderControl.js"></script>
-    <script type="text/javascript" src="tile.stamen.js"></script>
+<div id="map" style="width: 100%; height: 800px; align: right";></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<!-- Include this library for mobile touch support  -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+<script src="SliderControl.js"></script>
+<script type="text/javascript" src="tile.stamen.js"></script>
 <!--<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
 <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
 <script type="text/javascript" src="https://stamen-tiles.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>-->
-
-    <script>
-	var layer = new L.StamenTileLayer("watercolor");
+<script>
+var layer = new L.StamenTileLayer("watercolor");
 var drawnicon = L.icon({
     iconUrl: 'images/mapmark48.PNG',
     iconSize: [39,39],
@@ -70,19 +68,17 @@ var wordiconRef = L.icon({
     popupAnchor: [18,-20]
 });
 
-    var sliderControl = null;
-    var mymap = L.map('map').setView([44.5, -110.5], 10);
+var sliderControl = null;
+var mymap = L.map('map').setView([44.5, -110.5], 10);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mymap);
     //Use usual LayerGroups instead of GeoJSON fetched markers
     mymap.addLayer(layer);
-    
-	
-	var markerGoldenGate = L.marker([44.935309, -110.721347],{time: "1899-08-13 ", icon:drawnicon}).bindPopup("<big><b>Golden Gate </b></big><img src = 'images/goldengateoldnew.PNG' alt = 'the same photo over a hundred years apart'> <font size = '1'> <a href = 'http://www.lib.montana.edu/digital/objects/coll2577/2577-B01-F01.pdf'> Henry F Keyes</font></a><p>The only differences in a hundred years here appear to be man-made.</p>" , { maxWidth : 975, minWidth: 975 } ),
+    	
+var markerGoldenGate = L.marker([44.935309, -110.721347],{time: "1899-08-13 ", icon:drawnicon}).bindPopup("<big><b>Golden Gate </b></big><img src = 'images/goldengateoldnew.PNG' alt = 'the same photo over a hundred years apart'> <font size = '1'> <a href = 'http://www.lib.montana.edu/digital/objects/coll2577/2577-B01-F01.pdf'> Henry F Keyes</font></a><p>The only differences in a hundred years here appear to be man-made.</p>" , { maxWidth : 975, minWidth: 975 } ),
 
-
-    markerFaithful = L.marker([44.460467, -110.828104],{time: "1899-08-05", icon: drawnicon}).bindPopup("<big><b> Old Faithful and Castle Geyser</b></big><img src = 'images/oldfaithfulandcastle.png' alt = 'old faithful'> <font size = '1'> <a href = 'http://www.lib.montana.edu/digital/objects/coll2577/2577-B01-F01.pdf'> Henry F Keyes</font></a><p>While Keyes was walking around on the fifth, he broke through a crust near some of the thermal features and burnt his foot. He spent the next few days in the area recovering, either laying in bed or sitting and watching passing tourists and the geysers. These pictures could have been taken anytime during the days between the fifth and tenth before he was recovered enough to travel. The mornining of the eleventh marks the beginning of his return trip back to Bozeman and eventually home. </p> ",{maxWidth : 750, minWidth: 750}),
+  markerFaithful = L.marker([44.460467, -110.828104],{time: "1899-08-05", icon: drawnicon}).bindPopup("<big><b> Old Faithful and Castle Geyser</b></big><img src = 'images/oldfaithfulandcastle.png' alt = 'old faithful'> <font size = '1'> <a href = 'http://www.lib.montana.edu/digital/objects/coll2577/2577-B01-F01.pdf'> Henry F Keyes</font></a><p>While Keyes was walking around on the fifth, he broke through a crust near some of the thermal features and burnt his foot. He spent the next few days in the area recovering, either laying in bed or sitting and watching passing tourists and the geysers. These pictures could have been taken anytime during the days between the fifth and tenth before he was recovered enough to travel. The mornining of the eleventh marks the beginning of his return trip back to Bozeman and eventually home. </p> ",{maxWidth : 750, minWidth: 750}),
     markerFountain = L.marker([44.549261, -110.807523],{time: "1899-08-03",icon: drawnicon}).bindPopup("<big><b>Fountain Gyeser</b></big> <img src='images/2577-01-01-27-2.PNG' alt = 'formations at the fountain geyser'> <font size = '1'> <a href = 'http://www.lib.montana.edu/digital/objects/coll2577/2577-B01-F01.pdf'> Henry F Keyes</font></a><p>This set of pictures was taken through the afternoon of the third and the morning of the fourth. Mammoth Paint Pots were later renamed to Fountain Paint Pots, most likely to reduce confusion with the Mammoth Springs in the north part of the park.</p>", {maxWidth : 1200, minWidth: 1200}  ),
     //marker4 = L.marker([44.549261, -110.807523]).addTo(mymap),
     markerMadison = L.marker([44.649587, -110.951056],{time: "1899-08-02", icon: drawnicon}).bindPopup("<big><b>Madison Canyon</b> </big><img src ='images/2577-01-01-27-1.PNG' alt = 'madison river'><font size = '1'> <a href = 'http://www.lib.montana.edu/digital/objects/coll2577/2577-B01-F01.pdf'> Henry F Keyes</font></a><p>This photograph was taken on the trail near where Keyes made camp the evening of the second, around modern day Madison Junction.</p>",{maxWidth : 450, minWidth: 450} ),
@@ -345,7 +341,6 @@ mymap.on('popupopen', function(e) {
     mymap.panTo(mymap.unproject(px),{animate: true}); 	
 	e.update();
 });
-    </script>
+</script>
 </body>
-
 </html>
